@@ -1,0 +1,17 @@
+<form>
+  <div class="d-flex justify-content-center">
+
+    <div class="col-sm-2 col-form-group">
+      <label>ItemNo</label>
+      <input [(ngModel)]="model.itemNo" type="number" class="form-control" name="itemNo" >
+    </div>
+
+    <div class="col-sm-2 col-form-group">
+      <label  for="amount" >Amount </label>
+      <input  [(ngModel)]="model.itemAmount" name="itemAmount" type="number" id="amount" class="form-control">
+    </div>
+
+    <button id="deposit" (click)="deposit(model.itemNo,model.itemAmount)" style="margin-right: 10px" >Deposit</button>
+    <button id="withdrawal" (click)="withdrawal(model.itemNo,model.itemAmount)">Withdrawal</button>
+  </div>
+</form>

@@ -1,0 +1,15 @@
+<table class="table table-striped">
+  <tr>
+    <th>Item No</th>
+    <th>Item Name</th>
+    <th>Item Amount</th>
+    <th>Item Inventory Code</th>
+  </tr>
+  <tr *ngFor="let u of items" >
+    <td>{{u.itemNo}}</td>
+    <td>{{u.itemName}}</td>
+    <td>{{u.itemAmount}}</td>
+    <td>{{u.itemInventoryCode}}</td>
+    <button id="remove" (click)="deleteRow(u.itemNo)">Delete</button>
+  </tr>
+</table>

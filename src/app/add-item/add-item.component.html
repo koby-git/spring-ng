@@ -1,0 +1,23 @@
+<form (ngSubmit)="addItem()" name="first">
+  <div class="d-flex justify-content-center">
+
+  <div class="col-sm-2 col-form-group">
+    <label>Item name</label>
+    <input [(ngModel)]="model.itemName" type="text" class="form-control" name="itemName" >
+  </div>
+
+    <div class="col-sm-2 col-form-group">
+    <label  for="amount" >Amount </label>
+    <input placeholder="1" [(ngModel)]="model.itemAmount" name="itemAmount" type="number" id="amount" class="form-control">
+  </div>
+
+  <div class="col-sm-2 col-form-group">
+    <label >Inventory code</label>
+    <input type="number" class="form-control" [(ngModel)]="model.itemInventoryCode" name="itemInventoryCode">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+
+
